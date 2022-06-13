@@ -1,6 +1,48 @@
+* {
+  background-color: black;
+  margin: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 main {
   text-align: center;
   width: 100%;
-  background-color: black;
-  color: rgb(255, 0, 0);
+  color: rgba(255, 255, 255, 0.753);
+}
+
+.user-name {
+  font-size: 80px;
+  color: white;
+}
+
+.user-image {
+  width: 60px;
+}
+
+.input-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.btn {
+  width: 60px;
+  background-color: red;
+  color: black;
+  border: 2px outset rgba(255, 0, 0, 0.596);
+}
+
+.label-btn:hover {
+  box-shadow: 0 6px 10px 0 rgba(255, 2, 2, 0.384);
+}
+
+.label-btn:focus {
+  box-shadow: 0 6px 10px 0 rgba(255, 2, 2, 0.384);
+}
+
+
+
+
+input {
+  color: red;
 }

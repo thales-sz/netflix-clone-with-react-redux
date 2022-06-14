@@ -1,8 +1,9 @@
 * {
   background-color: black;
   margin: 0;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 main {
   text-align: center;
   width: 100%;
@@ -14,8 +15,21 @@ main {
   color: white;
 }
 
-.user-image {
-  width: 60px;
+.aux-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.user-img-container {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  border-radius: 10px;
+  margin: 5px;
 }
 
 .input-container {
@@ -25,24 +39,44 @@ main {
   padding: 15px;
 }
 
+.img-options {
+  display: none;
+}
+
 .btn {
-  width: 60px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 25px;
+  width: 200px;
+  margin-top: 30px;
   background-color: red;
-  color: black;
-  border: 2px outset rgba(255, 0, 0, 0.596);
+  color: white;
+  border: 2px outset rgba(250, 248, 248, 0.596);
+  border-radius: 10px;
+}
+
+.btn-img {
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.option:hover {
+  box-shadow: 1px 7px 15px 0 rgb(255, 255, 255);
 }
 
 .label-btn:hover {
-  box-shadow: 0 6px 10px 0 rgba(255, 2, 2, 0.384);
+  box-shadow: 0 6px 10px 0 rgba(250, 250, 250, 0.384);
 }
 
-.label-btn:focus {
-  box-shadow: 0 6px 10px 0 rgba(255, 2, 2, 0.384);
+.option {
+  cursor: pointer;
+  max-height: 250px;
 }
-
-
-
 
 input {
-  color: red;
+  color: rgb(253, 253, 253);text-align: center;
+  text-align: center;
 }

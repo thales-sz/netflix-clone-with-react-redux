@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGear } from '@fortawesome/free-solid-svg-icons'
 import { connect } from 'react-redux';
 import { userAction } from '../redux/actions';
-import Header from '../components/Header';
 import './Login.css';
 
 class Login extends React.Component {
@@ -51,7 +50,6 @@ class Login extends React.Component {
       <main>
         <div className="user-name">Quem está assistindo?</div>
         <div className="input-container">
-          Insira seu nome:
           <label htmlFor="input-login" className="label-btn">
             <input
               className="input-name"
@@ -60,6 +58,7 @@ class Login extends React.Component {
               name="username"
               value={username}
               onChange={this.handleChange}
+              placeholder="Insira seu nome..."
             />
           </label>
         </div>

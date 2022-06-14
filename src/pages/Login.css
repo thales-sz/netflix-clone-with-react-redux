@@ -51,12 +51,14 @@ img {
   margin-top: 30px;
   background-color: red;
   color: white;
+  font-weight: bolder;
   border: 2px outset rgba(250, 248, 248, 0.596);
   border-radius: 10px;
 }
 
 .btn-img {
   cursor: pointer;
+  font-weight: bolder;
   color: white;
   border-radius: 10px;
   height: 30px;
@@ -79,6 +81,17 @@ img {
 }
 
 input {
-  color: rgb(253, 253, 253);text-align: center;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.945);
+  border: none;
+  color: rgb(29, 28, 28);
   text-align: center;
+  text-align: center;
+}
+
+.input-name {
+  font-size: 15px;
+  font-weight: bold;
 }

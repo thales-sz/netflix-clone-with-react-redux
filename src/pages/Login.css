@@ -1,5 +1,5 @@
 * {
-  background-color: black;
+  background-color: #111;
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -64,6 +64,7 @@ img {
 }
 
 .option:hover {
+  transform: scale(1.11);
   box-shadow: 1px 7px 15px 0 rgb(255, 255, 255);
 }
 
@@ -74,6 +75,7 @@ img {
 .option {
   cursor: pointer;
   max-height: 250px;
+  transition: transform 450ms;
 }
 
 input {

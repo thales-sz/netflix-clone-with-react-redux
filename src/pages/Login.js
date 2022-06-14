@@ -14,8 +14,8 @@ class Login extends React.Component {
 
   buttonClick = () => {
     const { dispatch, history } = this.props;
-    const { username } = this.state;
-    dispatch(userAction(username.toUpperCase()));
+    const { username, imgSrc } = this.state;
+    dispatch(userAction(username.toUpperCase(), imgSrc));
     history.push("/home");
   }
 
@@ -49,7 +49,6 @@ class Login extends React.Component {
     const { username, imgSrc } = this.state;
     return (
       <main>
-        <Header />
         <div className="user-name">Quem está assistindo?</div>
         <div className="input-container">
           Insira seu nome:

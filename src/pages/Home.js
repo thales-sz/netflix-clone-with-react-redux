@@ -7,13 +7,16 @@ import './Home.css';
 
 export class Home extends Component {
   render() {
-    const { userData } = this.props;
     return (
       <main>
         <Header />
-        <div className="username">{userData}FLIX</div>
         {categories.map((category) => {
-          return <Row key={category.name} />
+          return <Row
+            key={category.name}
+            title={category.title}
+            path={category.path}
+            isLarge={category.isLarge}
+            />
         })}
       </main>
     )

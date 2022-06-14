@@ -42,3 +42,5 @@ export const getMovies = async (path) => {
     console.log("erro getMovies", error);
   }
 }
+
+export default categories;

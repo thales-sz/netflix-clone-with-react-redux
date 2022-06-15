@@ -24,9 +24,7 @@ export class Banner extends Component {
       <header
         className="banner-container"
         style={{
-          backgroundSize: 'cover',
           backgroundImage: `url(https://image.tmdb.org/t/p/original${movie.backdrop_path})`,
-          roundPosition: 'center-center',
         }}>
         <section className="banner-content">
           <h1 className="banner-title">{movie.title || movie.name}</h1>
@@ -38,6 +36,7 @@ export class Banner extends Component {
             {movie.overview}
           </div>
         </section>
+        <div className="fade"></div>
       </header>
     )
   }

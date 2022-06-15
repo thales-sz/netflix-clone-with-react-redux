@@ -4,6 +4,11 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+
+  z-index: 0;
 }
 
 .username {
@@ -16,6 +21,13 @@
   background-color: transparent;
 }
 
-.nav-container-black {
+.header-banner-black {
   background-color: #111;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 }

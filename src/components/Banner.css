@@ -2,7 +2,18 @@
   text-align: left;
   color: white;
   object-fit: contain;
-  height: 500px;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fade {
+  position: absolute;
+  top: 640px;
+  background-color: transparent;
+  width: 100%;
+  height: 60px;
+  background-image: linear-gradient(to bottom, transparent, #111);
 }
 
 .banner-content {

@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import categories from '../helpers/api';
 import Row from '../components/Row'
 import Header from '../components/Header'
+import Banner from '../components/Banner'
 import './Home.css';
 
 export class Home extends Component {
@@ -10,6 +11,7 @@ export class Home extends Component {
     return (
       <main>
         <Header />
+        <Banner />
         {categories.map((category) => {
           return <Row
             key={category.name}

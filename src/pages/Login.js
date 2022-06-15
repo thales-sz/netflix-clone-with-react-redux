@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGear } from '@fortawesome/free-solid-svg-icons'
+import Header from '../components/Header';
 import { connect } from 'react-redux';
 import { userAction } from '../redux/actions';
 import './Login.css';
@@ -48,6 +49,7 @@ class Login extends React.Component {
     const { username, imgSrc } = this.state;
     return (
       <main>
+        <Header />
         <div className="user-name">Quem está assistindo?</div>
         <div className="input-container">
           <label htmlFor="input-login" className="label-btn">

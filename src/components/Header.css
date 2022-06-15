@@ -1,3 +1,21 @@
 .header-banner {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+}
+
+.username {
+  margin-left: -10px;
+  font-family: 'Bebas Neue', cursive;
+  background-color: transparent;
+}
+
+.user-info {
+  background-color: transparent;
+}
+
+.nav-container-black {
+  background-color: #111;
 }

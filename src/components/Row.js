@@ -25,12 +25,11 @@ class Row extends Component {
         <h2>{title}</h2>
         <div className="row-cards">
           {movies.map((movie) => {
-            console.log(movie);
             return (
               <img
                 className={`movie-card${isLarge ? "-large" : ''}`}
                 key={movie.id}
-                src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
+                src={`https://image.tmdb.org/t/p/original${isLarge ? movie.backdrop_path : movie.poster_path}`}
                 alt={movie.name}
               >
               </img>);

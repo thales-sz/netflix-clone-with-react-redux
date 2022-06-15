@@ -1,0 +1,33 @@
+.header-banner {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+
+  z-index: 0;
+}
+
+.username {
+  margin-left: -10px;
+  font-family: 'Bebas Neue', cursive;
+  background-color: transparent;
+}
+
+.user-info {
+  background-color: transparent;
+}
+
+.header-banner-black {
+  background-color: #111;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
